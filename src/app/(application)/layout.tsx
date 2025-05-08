@@ -4,10 +4,10 @@ import { MainLayoutProps } from "@/types/layout/layout.interface";
 
 const MainLayout: FC<MainLayoutProps> = ({ children }) => {
     return (
-        <div className="h-screen bg-gray-50">
+        <>
             <Header />
             {children}
-        </div>
+        </>
     );
 };
 

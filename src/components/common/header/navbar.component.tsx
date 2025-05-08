@@ -2,17 +2,22 @@
 
 import Link from "next/link";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import DynamicButton from "../dynamic.button.component";
 
 export default function NavBar() {
     return (
         <nav className="p-4 flex justify-end space-x-4">
             <SignedOut>
-                <Link href="/sign-in" className="underline">
-                    Sign In
-                </Link>
-                <Link href="/sign-up" className="underline">
-                    Sign Up
-                </Link>
+                <DynamicButton
+                    btnText="Sign In"
+                    btnType="primary"
+                    btnUrl="/sign-in"
+                />
+                <DynamicButton
+                    btnText="Sign Up"
+                    btnType="outline"
+                    btnUrl="/sign-up"
+                />
             </SignedOut>
             <SignedIn>
                 <UserButton afterSignOutUrl="/" />

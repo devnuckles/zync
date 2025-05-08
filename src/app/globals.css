@@ -4,9 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-    --color-brand-teal: #00c8a2;
-    --color-brand-mid: #33d150;
-    --color-brand-lime: #80e825;
+    --color-brand-primary: #00d3a2;
+    --color-brand-mid: #34a798;
+    --color-brand-secondary: #008081;
 
     --color-background: ;
 }
